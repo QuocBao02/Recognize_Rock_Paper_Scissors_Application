@@ -4,7 +4,6 @@ import numpy as np
 import cv2 as cv
 import pygame as pg 
 import os
-from ftfy import fix_encoding
 
 # ------ Initialization--------
 # load_model
@@ -167,8 +166,8 @@ guessEngine = 0
 guessPlayer = 0
 winner = 3
 # Score
-Computer_Score = 5
-Player_Score = 4
+Computer_Score = 0
+Player_Score = 0
 
 Computer_color = blue
 Player_color = blue
