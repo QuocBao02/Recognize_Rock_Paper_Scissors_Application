@@ -113,7 +113,7 @@ def ShowGameResult(engine, player):
     
 # Predict image
 def PredictionImage(path):
-    img = tf.keras.preprocessing.image.load_img(path = path, target_size = (224, 224))
+    img = tf.keras.preprocessing.image.load_img(path = path, target_size = (300, 200))
     x = tf.keras.preprocessing.image.img_to_array(img)
     x /= 255
     x = np.expand_dims(x, axis=0)
